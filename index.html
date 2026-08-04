@@ -638,6 +638,50 @@ footer.howto h2 {
   .block-illustration img { transform: none !important; }
 }
 
+/* ---------- Материалы курса ---------- */
+.materials { padding: 26px 0 64px; scroll-margin-top: 74px; }
+.materials .wrap > h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(26px, 3.4vw, 34px);
+  margin: 0 0 8px;
+}
+.materials-sub { color: var(--ink-soft); margin: 0 0 28px; max-width: 68ch; }
+.mat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 18px;
+}
+.mat-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+}
+.mat-group h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16.5px;
+  margin: 0 0 4px;
+}
+.mat-group .mat-src { font-size: 12.5px; color: var(--ink-soft); margin: 0 0 12px; }
+.mat-list { list-style: none; margin: 0; padding: 0; }
+.mat-list li { border-top: 1px solid var(--line); }
+.mat-list li:first-child { border-top: 0; }
+.mat-list a {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 9px 2px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14.5px;
+  line-height: 1.35;
+}
+.mat-list a:hover { color: #3b6e64; }
+.mat-list .ext { font-size: 11px; color: var(--ink-soft); flex: 0 0 auto; }
+.mat-note { font-size: 12.5px; color: var(--ink-soft); margin: 18px 0 0; max-width: 76ch; }
 </style>
 </head>
 <body>
@@ -661,6 +705,7 @@ footer.howto h2 {
 <a class="nav-pill" href="#block-2" style="--pill-color:#a8722b"><span class="pill-roman">II</span>Концептуализация мышления</a>
 <a class="nav-pill" href="#block-3" style="--pill-color:#2f6690"><span class="pill-roman">III</span>Первый звонок и диагностика</a>
 <a class="nav-pill" href="#block-4" style="--pill-color:#5b4b8a"><span class="pill-roman">IV</span>Регрессия: ядро метода</a>
+<a class="nav-pill" href="#materials" style="--pill-color:#b3803f"><span class="pill-roman">✦</span>Материалы</a>
   </div>
 </nav>
 
@@ -1414,6 +1459,76 @@ footer.howto h2 {
     </section>
   </div>
 </main>
+
+<section class="materials" id="materials">
+  <div class="wrap">
+    <h2>Материалы курса</h2>
+    <p class="materials-sub">Презентации, схемы, шаблоны и рабочие документы, на которые ссылаются уроки. Файлы лежат в папке курса на Google Диске; часть инструментов живёт в документах автора курса.</p>
+    <div class="mat-grid">
+      <div class="mat-group">
+        <h3>Презентации лекций</h3>
+        <p class="mat-src">Папка курса → Материалы</p>
+        <ul class="mat-list">
+          <li><a href="https://drive.google.com/file/d/1_EKx96yilgrh2SkL6H2L5sSJx5NVO1al/view" target="_blank" rel="noopener">Лекция 1 — Введение (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1jJsyzFexKdqsRKXrvAQUkY4x3b23yi_2/view" target="_blank" rel="noopener">Лекция 2 — Психотравма (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1cL-RXsK4OY8XzwF6bT7zgNfLBTLStG71/view" target="_blank" rel="noopener">Лекция 2.1 — Психотравма, продолжение (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1ndGs07BctR8F3Lkj86zdw6-7UGVxOE6H/view" target="_blank" rel="noopener">Лекция 3 — Три уровня сознания (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1W_CJujK5cc2G1hrtfxOD87j4J4Sw7CCg/view" target="_blank" rel="noopener">Лекция 4 — Мышление и мировоззрение (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/184k70yf6JK_DPzBQEgJDt-bh57Swk5e4/view" target="_blank" rel="noopener">Практика — Построение КМ (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1OB5ZvcbAPRI_6NoiQkGFoiorHbHTZ95G/view" target="_blank" rel="noopener">Лекция 1 — Введение, версия 3.0 (PPTX)</a></li>
+          <li><a href="https://drive.google.com/file/d/1lkGLpEcrnT77Oja38Pul8l3HGfeqhfKX/view" target="_blank" rel="noopener">Лекция 2 — Психотравма, версия 3.0 (PPTX)</a></li>
+        </ul>
+      </div>
+      <div class="mat-group">
+        <h3>Опорные документы и схемы</h3>
+        <p class="mat-src">Папка курса → Материалы</p>
+        <ul class="mat-list">
+          <li><a href="https://drive.google.com/file/d/1eacSSNI0uDH5-jBMFiAKkFSyt2I6jpt_/view" target="_blank" rel="noopener">Каталог субличностей — 146 позиций (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/14Wth06VwHPtPkdSo9n2pvLoaHmhKHgQ5/view" target="_blank" rel="noopener">Схема «Обобщённая структура психики»</a></li>
+          <li><a href="https://drive.google.com/file/d/1sy6wpuD1Ic52uXiUWac2l5NyV8zD3Hol/view" target="_blank" rel="noopener">Схема «Стрела и поплавок»</a></li>
+          <li><a href="https://drive.google.com/file/d/1njyimBtBFAsUsZ2MnxkqC_NxsJbirCsU/view" target="_blank" rel="noopener">Справочник МКБ и DSM (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1l8TB0oiiU_ewI8hkjGlGy1caD4Hns_06/view" target="_blank" rel="noopener">Протокол реструктуризации — шаги 1–3</a></li>
+          <li><a href="https://drive.google.com/file/d/1kKk2plOv8WdDEPQW6FTuCGGbRZaoPAqx/view" target="_blank" rel="noopener">Протокол реструктуризации — кратко</a></li>
+          <li><a href="https://drive.google.com/file/d/1K3--ucQjd19cGZ9NUPu35cohhqP8SXVL/view" target="_blank" rel="noopener">Протокол реструктуризации — шаги 4–6</a></li>
+          <li><a href="https://drive.google.com/file/d/1bO8Ucu8Apu_ekoHMB2tIj0xlTgdgN0qv/view" target="_blank" rel="noopener">Шаблон «Концептуализация мышления» (XLSX)</a></li>
+          <li><a href="https://drive.google.com/file/d/1giUeupFI-IDsRipRoRqIHcAGxN9DK3um/view" target="_blank" rel="noopener">Пример построения КМ (Анжела)</a></li>
+          <li><a href="https://drive.google.com/file/d/1l8rKE9Sj0EZp9VvLD_7OqfNWxmUDbqVh/view" target="_blank" rel="noopener">Материалы практики концептуализации — 1</a></li>
+          <li><a href="https://drive.google.com/file/d/1cmmxIPHcDjSWIKOuNJ6tAexq0m5F7BoV/view" target="_blank" rel="noopener">Материалы практики концептуализации — 2</a></li>
+        </ul>
+      </div>
+      <div class="mat-group">
+        <h3>Рабочие инструменты</h3>
+        <p class="mat-src">Документы автора курса <span class="ext">внешние ссылки</span></p>
+        <ul class="mat-list">
+          <li><a href="https://docs.google.com/spreadsheets/d/1K_TUkxv8eCxi6QLTx_OY09ZEKQMo8asBePR1GkLPgiA/edit" target="_blank" rel="noopener">Таблица саморефлексии — домашнее задание (Google Sheets)</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1bjtbOIIPPWf2vvGYM_ZWKyug9XM8W6prCF6MmvbCXEA/edit" target="_blank" rel="noopener">Гугл-шаблон концептуализации мышления</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1nAH6ZYPMCvVtx0E6Gkwli1eQWEolDKOrRRDxz5YnSVM/edit" target="_blank" rel="noopener">Таблица самодиагностики (дневник)</a></li>
+          <li><a href="https://docs.google.com/document/d/1w8mncrWGAg8vXR2CY5ONDaydIhFXSGBe6yDntXE41vw/edit" target="_blank" rel="noopener">Скрипт первого звонка + ДЗ (Google Docs)</a></li>
+          <li><a href="https://docs.google.com/document/d/1nee5rt8XfH5ZBmH-pvu9_vn_ZAUltaTfeLS_Z5enytM/edit" target="_blank" rel="noopener">Доп. материал к Лекции 2</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScv_X-0cT-oR2YaSnCPFWIR6LUf4GK_kP1fyfgtlTFUpOMVAw/viewform" target="_blank" rel="noopener">Анкета клиента (Google Forms)</a></li>
+          <li><a href="https://miro.com/app/board/uXjVLEJ9eGE=/?share_link_id=370378719132" target="_blank" rel="noopener">Общий скрипт РКПТ — доска Miro</a></li>
+        </ul>
+      </div>
+      <div class="mat-group">
+        <h3>Презентации 3.0 и практика</h3>
+        <p class="mat-src">Выложены автором курса <span class="ext">внешние ссылки</span></p>
+        <ul class="mat-list">
+          <li><a href="https://disk.yandex.ru/i/5qD1quiDABXBMw" target="_blank" rel="noopener">Лекция 2, часть 3 — расстройства (Яндекс Диск)</a></li>
+          <li><a href="https://disk.yandex.ru/i/Nwfkk6QXu2Qhbg" target="_blank" rel="noopener">Лекция 3 — Три уровня сознания (Яндекс Диск)</a></li>
+          <li><a href="https://drive.google.com/file/d/1-ggCiKUzQDuRZ4bB6kqhsnhWW-K7ux_q/view" target="_blank" rel="noopener">Лекции 5–6 — Структура терапии, первый звонок</a></li>
+          <li><a href="https://drive.google.com/file/d/17l0xzHB_4HzB6PEdzRPklu2e8rovc9Kj/view" target="_blank" rel="noopener">Лекция 7 — Построение КМ</a></li>
+          <li><a href="https://drive.google.com/file/d/19bfGsU7q-jwb2CoqO5hIUJN95U3REVrx/view" target="_blank" rel="noopener">Лекция 8 — Трансовые состояния, гипноз</a></li>
+          <li><a href="https://drive.google.com/file/d/1IbuEsMl_-B6tamcD2pmPEc4wCMjfWVuY/view" target="_blank" rel="noopener">Лекция 10 — Регрессия и роли</a></li>
+          <li><a href="https://drive.google.com/file/d/15k59508hAv7A1eBZNmPdtc6fcvDQnF4W/view" target="_blank" rel="noopener">Лекция 11 — Гештальт-терапия и роли</a></li>
+          <li><a href="https://disk.yandex.ru/d/lFVZkUalGGa6Vg" target="_blank" rel="noopener">Библиотека экспозиций (Яндекс Диск)</a></li>
+          <li><a href="https://disk.yandex.ru/i/2L0DlS7VssrWvA" target="_blank" rel="noopener">Практика регрессии — запись из зала</a></li>
+          <li><a href="https://psytests.org/anxiety/stai.html" target="_blank" rel="noopener">Тесты: Спилбергер-Ханин · <a href="https://psytests.org/depr/bai.html" target="_blank" rel="noopener">Бек-тревога</a> · <a href="https://psytests.org/depr/bdi-run.html" target="_blank" rel="noopener">Бек-депрессия</a> · <a href="https://psytests.org/cbt/sopb.html" target="_blank" rel="noopener">SPB</a> · <a href="https://psytests.org/typo/tejung.html" target="_blank" rel="noopener">Юнг</a> · <a href="https://psytests.org/emvol/rathus.html" target="_blank" rel="noopener">Рейзас</a></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="mat-note">Ссылки из групп «Рабочие инструменты» и «Презентации 3.0» ведут на документы автора курса на внешних сервисах — если какая-то перестанет открываться, значит автор её перевыложил; файлы из папки курса на Диске под нашим контролем.</p>
+  </div>
+</section>
 
 <div class="block-illustration finale" style="--pill-color:#b3803f">
   <img src="img/finale.webp" alt="Гравюра: выход из пещеры к солнцу" loading="lazy">
