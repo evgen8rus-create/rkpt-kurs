@@ -108,6 +108,7 @@
   --font-body: 'Wix Madefor Text', -apple-system, 'Segoe UI', sans-serif;
 
   --paper: #f2e8d4;
+  --bg: #f2e8d4;
   --surface: #fbf4e5;
   --ink: #251c13;
   --ink-soft: #6c5943;
@@ -638,6 +639,39 @@ footer.howto h2 {
   .block-illustration img { transform: none !important; }
 }
 
+/* ---------- Материалы урока (чипы в карточке) ---------- */
+.lesson-mats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+.lesson-mats a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 999px;
+  padding: 5px 12px;
+  transition: border-color .15s ease, color .15s ease;
+}
+.lesson-mats a::before {
+  content: "\25C6";
+  font-size: 8px;
+  color: var(--block-color, var(--gold));
+  opacity: .7;
+}
+.lesson-mats a:hover {
+  border-color: var(--block-color, var(--gold));
+  color: var(--ink);
+}
+
 /* ---------- Материалы курса ---------- */
 .materials { padding: 26px 0 64px; scroll-margin-top: 74px; }
 .materials .wrap > h2 {
@@ -705,7 +739,7 @@ footer.howto h2 {
 <a class="nav-pill" href="#block-2" style="--pill-color:#a8722b"><span class="pill-roman">II</span>Концептуализация мышления</a>
 <a class="nav-pill" href="#block-3" style="--pill-color:#2f6690"><span class="pill-roman">III</span>Первый звонок и диагностика</a>
 <a class="nav-pill" href="#block-4" style="--pill-color:#5b4b8a"><span class="pill-roman">IV</span>Регрессия: ядро метода</a>
-<a class="nav-pill" href="#materials" style="--pill-color:#b3803f"><span class="pill-roman">✦</span>Материалы</a>
+<a class="nav-pill" href="materials.html" style="--pill-color:#b3803f"><span class="pill-roman">✦</span>Материалы</a>
   </div>
 </nav>
 
@@ -742,6 +776,11 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1N3RhM5EFZsMx4ARxKxhEgsV_wVTsWztj/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1_EKx96yilgrh2SkL6H2L5sSJx5NVO1al/view" target="_blank" rel="noopener">Презентация Л1</a>
+          <a href="https://drive.google.com/file/d/1OB5ZvcbAPRI_6NoiQkGFoiorHbHTZ95G/view" target="_blank" rel="noopener">Презентация Л1 (3.0)</a>
+          <a href="https://drive.google.com/file/d/14Wth06VwHPtPkdSo9n2pvLoaHmhKHgQ5/view" target="_blank" rel="noopener">Схема структуры психики</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — стартовое занятие курса: знакомство группы и панорама метода. Автор показывает, из каких девяти школ психотерапии РКПТ (регрессивно-когнитивно-поведенческая терапия) забирает не саму модальность, а её ключевое «открытие», и сводит все исторические карты психики к одной рабочей оси из трёх уровней: мышление · эмоции · тело. Это фундамент, на котором дальше строится вся работа с травмой.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -769,6 +808,13 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1uqKFDiqTD22b4kbOzL_lWGWrZpxRlDum/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1jJsyzFexKdqsRKXrvAQUkY4x3b23yi_2/view" target="_blank" rel="noopener">Презентация Л2</a>
+          <a href="https://drive.google.com/file/d/1lkGLpEcrnT77Oja38Pul8l3HGfeqhfKX/view" target="_blank" rel="noopener">Презентация Л2 (3.0)</a>
+          <a href="https://docs.google.com/spreadsheets/d/1K_TUkxv8eCxi6QLTx_OY09ZEKQMo8asBePR1GkLPgiA/edit" target="_blank" rel="noopener">Таблица саморефлексии (ДЗ)</a>
+          <a href="https://docs.google.com/document/d/1nee5rt8XfH5ZBmH-pvu9_vn_ZAUltaTfeLS_Z5enytM/edit" target="_blank" rel="noopener">Доп. материал</a>
+          <a href="https://drive.google.com/file/d/1eacSSNI0uDH5-jBMFiAKkFSyt2I6jpt_/view" target="_blank" rel="noopener">Каталог субличностей</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — ядро метода. Разбирается механика психотравмы: как она записывается сразу на трёх уровнях (установка + эмоция + соматика), как из травмы вырастает субличность, а субличности складываются в цепочки и дробят психику. Выдан первый и главный инструмент курса — таблица саморефлексии («наш рентген»), домашнее задание навсегда.</p>
         <details class="lesson-details">
@@ -798,6 +844,12 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1Iqv3GAwAbphSEYbTm5aWkVAJ7nFHHOrF/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1cL-RXsK4OY8XzwF6bT7zgNfLBTLStG71/view" target="_blank" rel="noopener">Презентация Л2.1</a>
+          <a href="https://disk.yandex.ru/i/5qD1quiDABXBMw" target="_blank" rel="noopener">Л2 ч.3 — расстройства</a>
+          <a href="https://drive.google.com/file/d/1njyimBtBFAsUsZ2MnxkqC_NxsJbirCsU/view" target="_blank" rel="noopener">Справочник МКБ/DSM</a>
+          <a href="https://docs.google.com/spreadsheets/d/1nAH6ZYPMCvVtx0E6Gkwli1eQWEolDKOrRRDxz5YnSVM/edit" target="_blank" rel="noopener">Таблица самодиагностики</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — продолжение темы психотравмы в двух частях. Первая: как формируется личность — роль родителей, «родовые программы» как установки, переданные воспитанием, и почему терапия по сути работает с памятью человека. Вторая: карта психических расстройств — три уровня организации личности, малая/средняя/большая психиатрия, 10 расстройств личности с авторскими «прозвищами» — чтобы терапевт понимал, кого берёт в работу, а кого направляет к врачу.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -826,6 +878,9 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1gx2KUwIlIOG-RBviovLc5wXsN1QFIyXe/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1ndGs07BctR8F3Lkj86zdw6-7UGVxOE6H/view" target="_blank" rel="noopener">Презентация Л3</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — когнитивное ядро метода. От Эллиса (модель ABC) и Бека (три уровня мышления) — к схеме концептуализации РКПТ: подкрепители → глубинные убеждения → промежуточные убеждения и субличности → автоматические мысли. Плюс рамка по эмоциям (эмоция — шаблон между мыслью и телом, заряд, который мы разряжаем) и соматике с ключевым механизмом — идеомоторной связью, на которой «построена вся работа».</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -853,6 +908,9 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1CA91Dn0Iwr7zP5_gh7WpDijGvTFj5lil/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1W_CJujK5cc2G1hrtfxOD87j4J4Sw7CCg/view" target="_blank" rel="noopener">Презентация Л4</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — последняя теоретическая лекция вводного блока. Автор разбирает, как устроено мировоззрение и мышление клиента, вводит рабочее деление иррационального на магическое и мистическое мышление и показывает, как с религиозными и эзотерическими убеждениями работать теми же инструментами, что и с любыми другими интроектами (интроект — чужая установка, «встроенная» в психику из внешнего источника: мама, папа, бабушка, культура). Цель метода формулируется как «целостное рационально-мистическое мировоззрение».</p>
         <details class="lesson-details">
@@ -902,6 +960,14 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1Z1yQl4aXi_lAtygB99j-MBqnHuXHC_YA/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/184k70yf6JK_DPzBQEgJDt-bh57Swk5e4/view" target="_blank" rel="noopener">Презентация практики</a>
+          <a href="https://drive.google.com/file/d/1sy6wpuD1Ic52uXiUWac2l5NyV8zD3Hol/view" target="_blank" rel="noopener">Стрела и поплавок</a>
+          <a href="https://drive.google.com/file/d/1bO8Ucu8Apu_ekoHMB2tIj0xlTgdgN0qv/view" target="_blank" rel="noopener">Шаблон КМ (XLSX)</a>
+          <a href="https://docs.google.com/spreadsheets/d/1bjtbOIIPPWf2vvGYM_ZWKyug9XM8W6prCF6MmvbCXEA/edit" target="_blank" rel="noopener">Гугл-шаблон КМ</a>
+          <a href="https://drive.google.com/file/d/1eacSSNI0uDH5-jBMFiAKkFSyt2I6jpt_/view" target="_blank" rel="noopener">Каталог субличностей</a>
+          <a href="https://drive.google.com/file/d/1giUeupFI-IDsRipRoRqIHcAGxN9DK3um/view" target="_blank" rel="noopener">Пример КМ (Анжела)</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — первое практическое занятие: метод показан в работе. За 25 минут теории даются два инструмента — «падающая стрела» (из автоматической мысли вниз, к глубинному убеждению) и «поплавок» (из глубинного убеждения вверх, к промежуточным убеждениям и субличностям), после чего — час живой демонстрации на участнице: собрана полная карта из трёх ядер, ~7 глубинных убеждений и 14 субличностей. Термины: АМ — автоматическая мысль; ГУ — глубинное убеждение (фундаментальный вывод о себе/мире); ПУ — промежуточное убеждение (правило-долженствование); субличность — именованная часть психики, стоящая за ПУ.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -930,6 +996,11 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1ZUcSGeY7bjdSPQKkHOzKDk_MVDlxOLw3/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1bO8Ucu8Apu_ekoHMB2tIj0xlTgdgN0qv/view" target="_blank" rel="noopener">Шаблон КМ (XLSX)</a>
+          <a href="https://drive.google.com/file/d/1l8rKE9Sj0EZp9VvLD_7OqfNWxmUDbqVh/view" target="_blank" rel="noopener">Материалы практики 1</a>
+          <a href="https://drive.google.com/file/d/1cmmxIPHcDjSWIKOuNJ6tAexq0m5F7BoV/view" target="_blank" rel="noopener">Материалы практики 2</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — первая групповая практика: работает не автор, а участники. Группа делится на тройки «клиент — терапевт — наблюдатель» по трём сессионным залам, автор ходит между залами и правит на ходу; в запись попали пять разборов. Падающая стрела впервые отрабатывается в живой работе, и занятие даёт большой набор практических поправок к протоколу: правило гипотезы, навигация «эмоция → ядро», порог фиксации ГУ, работа с сопротивлением.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -957,6 +1028,11 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/135LOox3z-ZNog87QMu9BmREBuSwp_VXF/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1l8TB0oiiU_ewI8hkjGlGy1caD4Hns_06/view" target="_blank" rel="noopener">Протокол: шаги 1–3</a>
+          <a href="https://drive.google.com/file/d/1kKk2plOv8WdDEPQW6FTuCGGbRZaoPAqx/view" target="_blank" rel="noopener">Протокол кратко</a>
+          <a href="https://drive.google.com/file/d/1K3--ucQjd19cGZ9NUPu35cohhqP8SXVL/view" target="_blank" rel="noopener">Протокол: шаги 4–6</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — Вводится центральный инструмент этапа: реструктуризация промежуточных убеждений (ПУ — ригидных правил поведения, долженствований). Часовое демо на примере «должна быть хорошей девочкой», затем два часа отработки в тройках. Логика: показать человеку вторичные выгоды убеждения, взвесить их против минусов и вывести новые адаптивные правила, дающие свободу и вариативность.</p>
         <details class="lesson-details">
@@ -1014,6 +1090,11 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/17LM472OtRHb6JbBtsLwfI52PW2Y6GTDu/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1l8TB0oiiU_ewI8hkjGlGy1caD4Hns_06/view" target="_blank" rel="noopener">Протокол: шаги 1–3</a>
+          <a href="https://drive.google.com/file/d/1kKk2plOv8WdDEPQW6FTuCGGbRZaoPAqx/view" target="_blank" rel="noopener">Протокол кратко</a>
+          <a href="https://drive.google.com/file/d/1K3--ucQjd19cGZ9NUPu35cohhqP8SXVL/view" target="_blank" rel="noopener">Протокол: шаги 4–6</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — Автор приносит финализированный протокол «Реструктуризация ПУ» из 6 шагов и рамку трёх потребностей (признание · принятие · безопасность), показывает их на сквозном примере «должна быть хорошей девочкой», скидывает три скриншота-шпаргалки в чат — и группа два с половиной часа отрабатывает протокол в сессионных залах. Закрепление КМ (концептуализации — карты установок клиента) идёт через её переработку: входом служат ПУ из уже построенных карт.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -1040,6 +1121,11 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1KFvOyIHxoXr_G8PSpOfgVyUzIMnRKH5R/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1l8TB0oiiU_ewI8hkjGlGy1caD4Hns_06/view" target="_blank" rel="noopener">Протокол 3.0: шаги 1–3</a>
+          <a href="https://drive.google.com/file/d/1kKk2plOv8WdDEPQW6FTuCGGbRZaoPAqx/view" target="_blank" rel="noopener">Протокол 3.0: кратко</a>
+          <a href="https://drive.google.com/file/d/1K3--ucQjd19cGZ9NUPu35cohhqP8SXVL/view" target="_blank" rel="noopener">Протокол 3.0: шаги 4–6</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — Четвёртый поток получает реструктуризацию ПУ в обновлённом виде: протокол сжат до пяти устных тактов «ПУ → плюсы → минусы → инсайт → новое ПУ», второе имя инструмента — «когнитивное взвешивание». Полтора часа лекции с сквозным демо на ПУ «должен быть удобным», затем отработка в парах по трём залам с поправками автора в моменте. Ключевая новация: три потребности (признание · принятие · безопасность) официально спаяны с тремя ядрами ГУ и тремя уровнями сознания в одну сетку.</p>
         <details class="lesson-details">
@@ -1116,6 +1202,10 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1dRB4McQ2vtu5Q1QPMqeSvYwo-UwcPVV0/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1-ggCiKUzQDuRZ4bB6kqhsnhWW-K7ux_q/view" target="_blank" rel="noopener">Презентация Л5–6</a>
+          <a href="https://miro.com/app/board/uXjVLEJ9eGE=/?share_link_id=370378719132" target="_blank" rel="noopener">Скрипт РКПТ (Miro)</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — сдвоенное занятие 3-го потока, где впервые показан весь конвейер терапии целиком: от первого касания клиента до выписки. До перерыва — общая структура Регрессивной терапии (два столпа: сепарация и регрессия), после — полный семипунктовый скрипт первого диагностического звонка с системой триажа и противопоказаниями. Термины: сепарация — работа с частями психики через образы (отделение от чужих программ); регрессия — погружение в раннее травматическое переживание для выражения эмоции; обреакция — выпускание накопленной эмоции; экспозиция — предъявление триггерного материала для вызова/проверки эмоции.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -1144,6 +1234,10 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1YJ2JJO4AI8W554D9cwQ3_B1iyyuCsw0w/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://docs.google.com/document/d/1w8mncrWGAg8vXR2CY5ONDaydIhFXSGBe6yDntXE41vw/edit" target="_blank" rel="noopener">Скрипт первого звонка</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScv_X-0cT-oR2YaSnCPFWIR6LUf4GK_kP1fyfgtlTFUpOMVAw/viewform" target="_blank" rel="noopener">Анкета клиента</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — Группа в тройках «клиент — терапевт — наблюдатель» отрабатывает первый звонок: первичную диагностику по скрипту из семи тем, 20–30 минут на человека. Автор ходит между сессионными залами и правит в моменте. Главная установка занятия: «мы здесь не проводим терапию, мы проводим опрос первичный» — задача терапевта собрать полную картину, а не лечить.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -1171,6 +1265,11 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1rElYUMyjiGjjafByymkrManBNYcG3hsS/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://docs.google.com/spreadsheets/d/1K_TUkxv8eCxi6QLTx_OY09ZEKQMo8asBePR1GkLPgiA/edit" target="_blank" rel="noopener">Таблица саморефлексии</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScv_X-0cT-oR2YaSnCPFWIR6LUf4GK_kP1fyfgtlTFUpOMVAw/viewform" target="_blank" rel="noopener">Анкета клиента</a>
+          <a href="https://docs.google.com/spreadsheets/d/1nAH6ZYPMCvVtx0E6Gkwli1eQWEolDKOrRRDxz5YnSVM/edit" target="_blank" rel="noopener">Таблица самодиагностики</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — Единственное занятие корпуса, где показано, что терапевт реально делает с заполненной таблицей саморефлексии клиента, и продемонстрирована запись первого созвона-диагностики. Главный принцип: ветки терапии строятся на диагностике, а таблица даёт прямые триггеры, дословные «фразочки» клиента и карту травматических событий для навигации в регрессии.</p>
         <details class="lesson-details">
@@ -1252,6 +1351,9 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1HD5KSPLFzj0za_jR8bCSP0vYoI99dnby/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/19bfGsU7q-jwb2CoqO5hIUJN95U3REVrx/view" target="_blank" rel="noopener">Презентация Л8</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — теоретическая база трансовой работы: что такое транс, чем он отличается от гипноза и почему в РКПТ гипноз не используется («нужна эмоция, а не гипноз»). Даётся карта трансовых состояний, три стадии гипноза по Каткову и — практически главное — связка подготовки клиента к регрессии: дыхание → йога-нидра → проверка идеомоторики (~10 минут), со скриптами голосом.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -1279,6 +1381,9 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1PvG3jsuJlHalcr1eLl06Rmztw9P0Z3yc/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://disk.yandex.ru/d/lFVZkUalGGa6Vg" target="_blank" rel="noopener">Библиотека экспозиций</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — отработка протокола расслабления в тройках с живыми поправками автора и первая полная лекция об экспозиции как технике вызова эмоции. Экспозиция в РКПТ — не «привыкание к стимулу», а дверь: вызвать эмоциональный заряд и по нему нырнуть в травму. Ключевое правило урока: «нет эмоций — нет работы».</p>
         <details class="lesson-details">
@@ -1338,6 +1443,9 @@ footer.howto h2 {
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1gOMhQKc2kPE3zsLz9JaLeDpWDa24PkYW/view" target="_blank" rel="noopener">Смотреть видео</a>
         </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/1IbuEsMl_-B6tamcD2pmPEc4wCMjfWVuY/view" target="_blank" rel="noopener">Презентация Л10</a>
+        </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — начало ядра метода: управляемая регрессия и абреакция (отреагирование — разрядка застрявшей эмоции). Регрессия — защитный механизм психики, который метод использует технически: через усиленную эмоцию клиент погружается в максимально раннее событие цепочки, где травма выходит «либо через слёзы, либо через гнев». Даны 5 скриптов входа в регрессию; роли перенесены на следующее занятие.</p>
         <details class="lesson-details">
           <summary>Конспект урока</summary>
@@ -1365,6 +1473,9 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/1rWHKaXgvIc4IgUw4tpZHwDszJYAbuwot/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://drive.google.com/file/d/15k59508hAv7A1eBZNmPdtc6fcvDQnF4W/view" target="_blank" rel="noopener">Презентация Л11</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — что делать внутри травматического переживания, когда по регрессии уже спустились: работа ролями (расширенный «пустой стул» из гештальт-терапии), поддержка детской части, абреакция, прощение и авторская формула исцеления — «как зашивается разрыв». Полный протокол ролей на двух базовых сценариях: «мама + папа + я» и «мама + я».</p>
         <details class="lesson-details">
@@ -1428,6 +1539,9 @@ footer.howto h2 {
             </div>
           </div>
           <a class="btn-watch" href="https://drive.google.com/file/d/103pxG0Ae1EYt4g0bHEoKxBZGNCtKnXLF/view" target="_blank" rel="noopener">Смотреть видео</a>
+        </div>
+        <div class="lesson-mats">
+          <a href="https://disk.yandex.ru/i/2L0DlS7VssrWvA" target="_blank" rel="noopener">Запись из зала</a>
         </div>
         <p class="lesson-summary"><strong>Суть урока</strong> — первая практика, где регрессию ведут сами ученики: три сессионных зала, роли терапевт / клиент / наблюдатель, автор курсирует между залами, перехватывает ведение в трудных местах и разбирает ошибки. Главное содержание — живые поправки: как удерживать эмоцию, когда включать экспозицию, как разгружать фигуры слоями и проверять результат.</p>
         <details class="lesson-details">
@@ -1513,76 +1627,6 @@ footer.howto h2 {
     </section>
   </div>
 </main>
-
-<section class="materials" id="materials">
-  <div class="wrap">
-    <h2>Материалы курса</h2>
-    <p class="materials-sub">Презентации, схемы, шаблоны и рабочие документы, на которые ссылаются уроки. Файлы лежат в папке курса на Google Диске; часть инструментов живёт в документах автора курса.</p>
-    <div class="mat-grid">
-      <div class="mat-group">
-        <h3>Презентации лекций</h3>
-        <p class="mat-src">Папка курса → Материалы</p>
-        <ul class="mat-list">
-          <li><a href="https://drive.google.com/file/d/1_EKx96yilgrh2SkL6H2L5sSJx5NVO1al/view" target="_blank" rel="noopener">Лекция 1 — Введение (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/1jJsyzFexKdqsRKXrvAQUkY4x3b23yi_2/view" target="_blank" rel="noopener">Лекция 2 — Психотравма (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/1cL-RXsK4OY8XzwF6bT7zgNfLBTLStG71/view" target="_blank" rel="noopener">Лекция 2.1 — Психотравма, продолжение (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/1ndGs07BctR8F3Lkj86zdw6-7UGVxOE6H/view" target="_blank" rel="noopener">Лекция 3 — Три уровня сознания (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/1W_CJujK5cc2G1hrtfxOD87j4J4Sw7CCg/view" target="_blank" rel="noopener">Лекция 4 — Мышление и мировоззрение (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/184k70yf6JK_DPzBQEgJDt-bh57Swk5e4/view" target="_blank" rel="noopener">Практика — Построение КМ (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/1OB5ZvcbAPRI_6NoiQkGFoiorHbHTZ95G/view" target="_blank" rel="noopener">Лекция 1 — Введение, версия 3.0 (PPTX)</a></li>
-          <li><a href="https://drive.google.com/file/d/1lkGLpEcrnT77Oja38Pul8l3HGfeqhfKX/view" target="_blank" rel="noopener">Лекция 2 — Психотравма, версия 3.0 (PPTX)</a></li>
-        </ul>
-      </div>
-      <div class="mat-group">
-        <h3>Опорные документы и схемы</h3>
-        <p class="mat-src">Папка курса → Материалы</p>
-        <ul class="mat-list">
-          <li><a href="https://drive.google.com/file/d/1eacSSNI0uDH5-jBMFiAKkFSyt2I6jpt_/view" target="_blank" rel="noopener">Каталог субличностей — 146 позиций (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/14Wth06VwHPtPkdSo9n2pvLoaHmhKHgQ5/view" target="_blank" rel="noopener">Схема «Обобщённая структура психики»</a></li>
-          <li><a href="https://drive.google.com/file/d/1sy6wpuD1Ic52uXiUWac2l5NyV8zD3Hol/view" target="_blank" rel="noopener">Схема «Стрела и поплавок»</a></li>
-          <li><a href="https://drive.google.com/file/d/1njyimBtBFAsUsZ2MnxkqC_NxsJbirCsU/view" target="_blank" rel="noopener">Справочник МКБ и DSM (PDF)</a></li>
-          <li><a href="https://drive.google.com/file/d/1l8TB0oiiU_ewI8hkjGlGy1caD4Hns_06/view" target="_blank" rel="noopener">Протокол реструктуризации — шаги 1–3</a></li>
-          <li><a href="https://drive.google.com/file/d/1kKk2plOv8WdDEPQW6FTuCGGbRZaoPAqx/view" target="_blank" rel="noopener">Протокол реструктуризации — кратко</a></li>
-          <li><a href="https://drive.google.com/file/d/1K3--ucQjd19cGZ9NUPu35cohhqP8SXVL/view" target="_blank" rel="noopener">Протокол реструктуризации — шаги 4–6</a></li>
-          <li><a href="https://drive.google.com/file/d/1bO8Ucu8Apu_ekoHMB2tIj0xlTgdgN0qv/view" target="_blank" rel="noopener">Шаблон «Концептуализация мышления» (XLSX)</a></li>
-          <li><a href="https://drive.google.com/file/d/1giUeupFI-IDsRipRoRqIHcAGxN9DK3um/view" target="_blank" rel="noopener">Пример построения КМ (Анжела)</a></li>
-          <li><a href="https://drive.google.com/file/d/1l8rKE9Sj0EZp9VvLD_7OqfNWxmUDbqVh/view" target="_blank" rel="noopener">Материалы практики концептуализации — 1</a></li>
-          <li><a href="https://drive.google.com/file/d/1cmmxIPHcDjSWIKOuNJ6tAexq0m5F7BoV/view" target="_blank" rel="noopener">Материалы практики концептуализации — 2</a></li>
-        </ul>
-      </div>
-      <div class="mat-group">
-        <h3>Рабочие инструменты</h3>
-        <p class="mat-src">Документы автора курса <span class="ext">внешние ссылки</span></p>
-        <ul class="mat-list">
-          <li><a href="https://docs.google.com/spreadsheets/d/1K_TUkxv8eCxi6QLTx_OY09ZEKQMo8asBePR1GkLPgiA/edit" target="_blank" rel="noopener">Таблица саморефлексии — домашнее задание (Google Sheets)</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/1bjtbOIIPPWf2vvGYM_ZWKyug9XM8W6prCF6MmvbCXEA/edit" target="_blank" rel="noopener">Гугл-шаблон концептуализации мышления</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/1nAH6ZYPMCvVtx0E6Gkwli1eQWEolDKOrRRDxz5YnSVM/edit" target="_blank" rel="noopener">Таблица самодиагностики (дневник)</a></li>
-          <li><a href="https://docs.google.com/document/d/1w8mncrWGAg8vXR2CY5ONDaydIhFXSGBe6yDntXE41vw/edit" target="_blank" rel="noopener">Скрипт первого звонка + ДЗ (Google Docs)</a></li>
-          <li><a href="https://docs.google.com/document/d/1nee5rt8XfH5ZBmH-pvu9_vn_ZAUltaTfeLS_Z5enytM/edit" target="_blank" rel="noopener">Доп. материал к Лекции 2</a></li>
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScv_X-0cT-oR2YaSnCPFWIR6LUf4GK_kP1fyfgtlTFUpOMVAw/viewform" target="_blank" rel="noopener">Анкета клиента (Google Forms)</a></li>
-          <li><a href="https://miro.com/app/board/uXjVLEJ9eGE=/?share_link_id=370378719132" target="_blank" rel="noopener">Общий скрипт РКПТ — доска Miro</a></li>
-        </ul>
-      </div>
-      <div class="mat-group">
-        <h3>Презентации 3.0 и практика</h3>
-        <p class="mat-src">Выложены автором курса <span class="ext">внешние ссылки</span></p>
-        <ul class="mat-list">
-          <li><a href="https://disk.yandex.ru/i/5qD1quiDABXBMw" target="_blank" rel="noopener">Лекция 2, часть 3 — расстройства (Яндекс Диск)</a></li>
-          <li><a href="https://disk.yandex.ru/i/Nwfkk6QXu2Qhbg" target="_blank" rel="noopener">Лекция 3 — Три уровня сознания (Яндекс Диск)</a></li>
-          <li><a href="https://drive.google.com/file/d/1-ggCiKUzQDuRZ4bB6kqhsnhWW-K7ux_q/view" target="_blank" rel="noopener">Лекции 5–6 — Структура терапии, первый звонок</a></li>
-          <li><a href="https://drive.google.com/file/d/17l0xzHB_4HzB6PEdzRPklu2e8rovc9Kj/view" target="_blank" rel="noopener">Лекция 7 — Построение КМ</a></li>
-          <li><a href="https://drive.google.com/file/d/19bfGsU7q-jwb2CoqO5hIUJN95U3REVrx/view" target="_blank" rel="noopener">Лекция 8 — Трансовые состояния, гипноз</a></li>
-          <li><a href="https://drive.google.com/file/d/1IbuEsMl_-B6tamcD2pmPEc4wCMjfWVuY/view" target="_blank" rel="noopener">Лекция 10 — Регрессия и роли</a></li>
-          <li><a href="https://drive.google.com/file/d/15k59508hAv7A1eBZNmPdtc6fcvDQnF4W/view" target="_blank" rel="noopener">Лекция 11 — Гештальт-терапия и роли</a></li>
-          <li><a href="https://disk.yandex.ru/d/lFVZkUalGGa6Vg" target="_blank" rel="noopener">Библиотека экспозиций (Яндекс Диск)</a></li>
-          <li><a href="https://disk.yandex.ru/i/2L0DlS7VssrWvA" target="_blank" rel="noopener">Практика регрессии — запись из зала</a></li>
-          <li><a href="https://psytests.org/anxiety/stai.html" target="_blank" rel="noopener">Тесты: Спилбергер-Ханин · <a href="https://psytests.org/depr/bai.html" target="_blank" rel="noopener">Бек-тревога</a> · <a href="https://psytests.org/depr/bdi-run.html" target="_blank" rel="noopener">Бек-депрессия</a> · <a href="https://psytests.org/cbt/sopb.html" target="_blank" rel="noopener">SPB</a> · <a href="https://psytests.org/typo/tejung.html" target="_blank" rel="noopener">Юнг</a> · <a href="https://psytests.org/emvol/rathus.html" target="_blank" rel="noopener">Рейзас</a></a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="mat-note">Ссылки из групп «Рабочие инструменты» и «Презентации 3.0» ведут на документы автора курса на внешних сервисах — если какая-то перестанет открываться, значит автор её перевыложил; файлы из папки курса на Диске под нашим контролем.</p>
-  </div>
-</section>
 
 <div class="block-illustration finale" style="--pill-color:#b3803f">
   <img src="img/finale.webp" alt="Гравюра: выход из пещеры к солнцу" loading="lazy">
